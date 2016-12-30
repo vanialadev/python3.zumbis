@@ -1,7 +1,9 @@
 a = int(input('Lado 1\n'))
 b = int(input('Lado 2\n'))
 c = int(input('Lado 3\n'))
-if a == b and b == c:
+if a > b + c or b > a + c or c > a + b:
+    print('Não pode ser um triângulo')
+elif a == b and b == c:
     print('equilátero')
 elif a == b or b == c or c == a:
     print('isósceles')
