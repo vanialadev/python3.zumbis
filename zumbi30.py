@@ -1,51 +1,3 @@
-x = 'abacate'
-y = "MacDonald's"
-z = '''
-<html>
-    <head>
-        <title>Teste</title>
-    </head>
-    <body>
-        <p>Testando</p>
-    </body>
-</html>
-'''
-
-print(x)
-print(y)
-print(z)
-
-x = '0123456789'
-print(x[0:2])
-print(x[1:2])
-print(x[2:4])
-print(x[0:5])
-print(x[1:8])
-print(x[0:11])
-print(x[:2])
-print(x[4:])
-print(x[4:-1])  # -1 último
-print(x[-4:-1])  # -2 antipenúltimo
-print(x[-4:-2])
-print(x[:])
-
-texto = 'batatinha quando nasce'
-print(texto[::2])  # pulando de 2 em 2
-print(texto[::-1])  # invertando a str
-
-palavra = input('Qual a palavra? ')
-nova_string = palavra[::-1]
-# if palavra = palavra[::-1]
-if palavra == nova_string:
-    print('É palíndrome')
-else:
-    print('Não é palíndrome')
-
-texto = 'Alô Mundo'
-texto = '@' + texto[1:]
-print(texto)
-
-
 edificio = ['Família Souza', 'Família Brito', 'Família Almeida', 'Família Rodrigues']
 print(edificio[0])
 print(edificio[1])
@@ -70,6 +22,7 @@ print(notas[0])
 notas[0] = 10
 print(notas[0])
 
+#calcule a média de 5 notas
 notas = [10, 9.3, 8.7, 8.2, 9]
 contador = 0
 soma = 0
@@ -79,6 +32,8 @@ while contador < len(notas):
 media = soma/5
 print('Média é %.2f' % media)
 
+
+# leia um vetor de 5 numeros inteiros e mostre o vetor
 vetor = []
 x = 0
 while x < 5:
@@ -87,6 +42,8 @@ while x < 5:
     x += 1
 print('Vetor lido: ', vetor)
 
+
+# leia um vetor de 10 numeros inteiros e mostre o inverso
 vetor = []
 novo_vetor = []
 x = 0
@@ -100,6 +57,7 @@ while x >= 0:
     x -= 1
 print('Vetor lido: ', novo_vetor)
 
+# leia um vetor de 10 numeros inteiros e mostre o inverso
 vetor = []
 x = 0
 while x < 10:
@@ -111,6 +69,7 @@ while x >= 0:
     print(vetor[x])
     x -= 1
 
+# leia 4 notas e mostre as notas e a media na tela
 notas = []
 contador = 0
 soma = 0
@@ -123,9 +82,11 @@ media = soma/4
 print('Notas: ', notas)
 print('Média é %.2f' % media)
 
+
+# leia 10 caracteres minúsculos e diga quantas consoantes foram lidas
 letras = []
 n = 0
-while n < 5:
+while n < 10:
     caractere = input('Informe o caractere ')
     letras.append(caractere)
     n += 1
@@ -138,9 +99,11 @@ while x < len(letras):
     x += 1
 print('Foram lidas %d consoantes' % total)
 
+
+# leia 10 caracteres minúsculos e diga quantas consoantes foram lidas
 letras = []
 n = 0
-while n < 5:
+while n < 10:
     caractere = input('Informe o caractere ')
     letras.append(caractere)
     n += 1
